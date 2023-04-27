@@ -1,0 +1,22 @@
+body {
+    background-color: #F8F2E6;
+    font-family: 'Sofia Sans', sans-serif;
+  }
+
+.custom-navbar{
+    background-color: #6F7949;
+    padding: 10px 20px;
+  }  
+
+.custom-navbar a{
+    color: #F8F2E6;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 15pt;
+    padding: 0 10px;
+}
+  
+.custom-search
+{
+    background-color: #989F7F;
+    color: #F8F2E6;
+}
