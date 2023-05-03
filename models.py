@@ -9,4 +9,5 @@ from sqlalchemy.orm import relationship
 from database import Base
 
 # TODO: Complete your models
-    
+
+class Hike

@@ -1,106 +1,116 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>My Website</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../static/styles/stylehome.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg custom-navbar">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mr-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles/stylehome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/index">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Get Hiking</a>
+                    <a class="nav-link" href="/gethiking">Get Hiking</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">See Friends</a>
+                    <a class="nav-link" href="#">See Friends</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Your Adventure So Far</a>
+                    <a class="nav-link" href="/youradventuresofar">Your Adventure So Far</a>
                 </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control mr-sm-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control mr-sm-2 custom-search" type="search" placeholder="Search"
+                    aria-label="Search">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>       
-          
-          <h1>See Popular Hikes Nearby:</h1>
-          <div class="jumbotron">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
+            </form>
+        </div>
+    </nav>
+
+    <h1>See Popular Hikes Nearby:</h1>
+    <div class="jumbotron">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
+            </ol>
+            <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src=../images/windyhill.jpg class="d-block w-100" alt="Image 1">
-                  <div class="carousel-caption">
-                    <h3><a class = "windy-text" href="#">See More About Windy Hill</a></h3>
-                  </div>
+                    <img src= "/static/images/windyhill.jpg" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption">
+                        <h3><a class="windy-text" href="#">See More About Windy Hill</a></h3>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                  <img src=../images/montara.jpg class="d-block w-100" alt="Image 2">
-                  <div class="carousel-caption">
-                    <h3><a class = "montara-text" href="#">See More About Montara</a></h3>
-                  </div>
+                    <img src="static/images/montara.jpg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption">
+                        <h3><a class="montara-text" href="#">See More About Montara</a></h3>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                  <img src=../images/dish.webp class="d-block w-100" alt="Image 3">
-                  <div class="carousel-caption">
-                    <h3><a class = "dish-text" href="#">See More About The Dish</a></h3>
-                  </div>
+                    <img src= "static/images/dish.webp" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption">
+                        <h3><a class="dish-text" href="#">See More About The Dish</a></h3>
+                    </div>
                 </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
+            </a>
+        </div>
+    </div>
 
-          <h2>Active Friends to Follow:</h2>
-          <div class="card-deck">
-            <div class="card">
-              <img src=../images/profile.png class="card-img-top" alt="...">
-              <div class="card-body">
+    <h2>Active Friends to Follow:</h2>
+    <div class="card-deck">
+        <div class="card">
+            <img src="static/images/profile.png" class="card-img-top" alt="...">
+            <div class="card-body">
                 <h5 class="card-title" href="#">USERNAME</h5>
             </div>
-            </div>
-            <div class="card">
-              <img src=../images/profile.png class="card-img-top" alt="...">
-              <div class="card-body">
+        </div>
+        <div class="card">
+            <img src="static/images/profile.png" class="card-img-top" alt="...">
+            <div class="card-body">
                 <h5 class="card-title" href="#">USERNAME</h5>
-            
-                </div>
+
             </div>
-            <div class="card">
-              <img src=../images/profile.png class="card-img-top" alt="...">
-              <div class="card-body">
+        </div>
+        <div class="card">
+            <img src="static/images/profile.png" class="card-img-top" alt="...">
+            <div class="card-body">
                 <h5 class="card-title" href="#">USERNAME</h5>
-                </div>
             </div>
-          </div>
-          
-          
-          
-    </body>
-      
+        </div>
+    </div>
+
+
+
+</body>
+
 </html>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>

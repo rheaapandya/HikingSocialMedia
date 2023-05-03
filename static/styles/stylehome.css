@@ -1,78 +1,79 @@
 body {
-    background-color: #F8F2E6;
-    font-family: 'Sofia Sans', sans-serif;
-  }
-
-.custom-navbar{
-    background-color: #6F7949;
-    padding: 10px 20px;
-  }  
-
-.custom-navbar a{
-    color: #F8F2E6;
-    font-family: 'Sofia Sans', sans-serif;
-    font-size: 15pt;
-    padding: 0 10px;
-}
-  
-.custom-search
-{
-    background-color: #989F7F;
-    color: #F8F2E6;
+  background-color: #F8F2E6;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
-
-.windy-text, .dish-text{
-    color: #F8F2E6;
-  }
-
-.montara-text{
-    color: black;
+.custom-navbar {
+  background-color: #6F7949;
+  padding: 10px 20px;
 }
 
-a{
-    font-size: 15px;
+.custom-navbar a {
+  color: #F8F2E6;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 15pt;
+  padding: 0 10px;
 }
 
-img{
-    height: 450px;
-  }
+.custom-search {
+  background-color: #989F7F;
+  color: #F8F2E6;
+}
 
-  .jumbotron {
-    padding: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #F8F2E6;
-  }
+.windy-text,
+.dish-text {
+  color: #F8F2E6;
+  text-decoration: underline;
+}
 
-  h1{
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
+.montara-text {
+  color: black;
+  text-decoration: underline;
+}
 
-  .card-img-top{
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-  }
+a {
+  font-size: 15px;
+}
 
-  h2{
-    font-size: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
+img {
+  height: 450px;
+}
 
-  .card {
-    background-color: #989F7F;
-    text-align: center;
-  }
-  
-  .card-deck {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
+.jumbotron {
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #F8F2E6;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.card-img-top {
+  height: 90%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.card {
+  background-color: #C4CFC7;
+  text-align: center;
+}
+
+.card-deck {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
