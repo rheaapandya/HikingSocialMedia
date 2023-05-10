@@ -13,8 +13,10 @@
 </head>
 
 <body>
+
+    <!-- The following code was produced by chatGPT but modified by me -->
     <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar navbar-expand-lg" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/index">Home</a>
@@ -23,67 +25,64 @@
                     <a class="nav-link" href="/gethiking">Get Hiking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">See Friends</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/youradventuresofar">Your Adventure So Far</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control mr-sm-2 custom-search" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="navbar navbar-expand-lg" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Start Adventuring!
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/login">Login</a>
+                            <a class="dropdown-item" href="/signup">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <h1>Your Profile:</h1>
-    <a>@USERNAME</a>
+    <a>@{{user}}</a>
 
     <h2>Hikes you have done:</h2>
     <div class="card-deck">
         <div class="card">
             <img src="static/images/hikefiller.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title" href="#">HIKE NAME</h5>
+                <h5 class="card-title">{{hike1}}</h5>
             </div>
         </div>
         <div class="card">
             <img src="static/images/hikefiller.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title" href="#">HIKE NAME</h5>
+                <h5 class="card-title">{{hike2}}</h5>
 
             </div>
         </div>
         <div class="card">
             <img src="static/images/hikefiller.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title" href="#">HIKE NAME</h5>
+                <h5 class="card-title">{{hike3}}</h5>
             </div>
         </div>
         <div class="card">
             <img src="static/images/hikefiller.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title" href="#">HIKE NAME</h5>
+                <h5 class="card-title">{{hike4}}</h5>
             </div>
         </div>
     </div>
 
-    <div class="search-box">
-        <form>
-            <a>Add a Hike</a>
-            <input type="text" placeholder="Search Name of Hike">
-            <button type="submit">Search</button>
-        </form>
-    </div>
 
-    <div class="search-box">
-        <form>
-            <a>Add a Friend</a>
-            <input type="text" placeholder="Search Name of Friend">
-            <button type="submit">Search</button>
-        </form>
-    </div>
+    <button class="btn btn-primary">
+        <a href="/logout">Log Out</a>
+    </button>
 
+
+    <!-- chatGPT code ends -->
 
 </body>
 

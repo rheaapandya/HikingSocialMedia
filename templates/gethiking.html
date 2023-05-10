@@ -13,8 +13,10 @@
 </head>
 
 <body>
+
+    <!-- The following code was produced by chatGPT but modified by me -->
     <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar navbar-expand-lg" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/index">Home</a>
@@ -23,17 +25,23 @@
                     <a class="nav-link" href="/gethiking">Get Hiking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">See Friends</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/youradventuresofar">Your Adventure So Far</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control mr-sm-2 custom-search" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="navbar navbar-expand-lg" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Start Adventuring!
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/login">Login</a>
+                            <a class="dropdown-item" href="/signup">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <h1>Get Hiking!</h1>
@@ -42,26 +50,26 @@
             <div class="card">
                 <img src="static/images/windyhill.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Windy Hill</h5>
+                    <a class="card-title" href="/windyhill">Windy Hill Loop</a>
                 </div>
             </div>
             <div class="card">
-                <img src= "static/images/montara.jpg" class="card-img-top" alt="...">
+                <img src="static/images/montara.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Montara</h5>
+                    <a class="card-title" href="/montara">Montara Mountain Loop</a>
 
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/dish.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Dish</h5>
+                    <a class="card-title" href="/dish">Dish</a>
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/almadenlake.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Almaden Lake</h5>
+                    <a class="card-title" href="/almaden">Almaden Lake</a>
                 </div>
             </div>
         </div>
@@ -69,26 +77,26 @@
             <div class="card">
                 <img src="static/images/santateresa.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Santa Teresa County Park Loop</h5>
+                    <a class="card-title" href="/santateresa">Santa Teresa Mine Loop</a>
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/sequoiatrail.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Sequoia Trail</h5>
+                    <a class="card-title" href="/sequoia">Sequoia Bayview Trail</a>
 
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/berrycreek.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Berry Creek Falls Loop</h5>
+                    <a class="card-title" href="/berry">Berry Creek Falls Loop</a>
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/blackmountain.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Black Mountain</h5>
+                    <a class="card-title" href="/blackmountain">Black Mountain</a>
                 </div>
             </div>
         </div>
@@ -96,32 +104,32 @@
             <div class="card">
                 <img src="static/images/missionpeak.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Mission Peak</h5>
+                    <a class="card-title" href="/mission">Mission Peak</a>
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/saratogagap.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Saratoga Gap Trail</h5>
+                    <a class="card-title" href="/saratoga">Saratoga Gap Trail</a>
 
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/russianridge.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Russian Ridge</h5>
+                    <a class="card-title" href="/russianridge">Russian Ridge</a>
                 </div>
             </div>
             <div class="card">
                 <img src="static/images/purismacreek.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" href="#">Purisma Creek</h5>
+                    <a class="card-title" href="/purisma">Purisma Creek</a>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <!-- chatGPT code ends -->
 
 </body>
 

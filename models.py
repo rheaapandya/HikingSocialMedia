@@ -18,17 +18,17 @@ class Hike(Base):
     name = Column("name", TEXT, nullable = False)
     location = Column("location", TEXT, nullable = False)
     pets = Column("pets", TEXT, nullable = False)
-    weather = Column("weather", TEXT, nullable = False)
+    difficulty = Column("difficulty", TEXT, nullable = False)
     users = relationship("User", secondary = "userhikes", back_populates = "hikes")
 
     #Constructor
-    def __init__(self, name, location, pets, weather):
+    def __init__(self, name, location, pets, difficulty):
         self.name = name
         self.location = location
         self.pets = pets
-        self.weather = weather
+        self.difficulty = difficulty
 
-class user(Base):
+class User(Base):
     __tablename__ = "users"
     # Columns
     username = Column("username", TEXT, primary_key=True)
@@ -40,7 +40,7 @@ class user(Base):
         self.password = password
 
 
-class userhike(Base):
+class Userhike(Base):
     __tablename__ = "userhikes"
 
     #Columns

@@ -2,11 +2,13 @@
 <html>
 
 <head>
+    <title>{% block title%}{% endblock %}</title>
+
     <meta charset="UTF-8">
-    <title>Login Page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/styles/stylelogin.css">
+    <link rel="stylesheet" href="../static/styles/stylehike.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
 </head>
 
 <body>
-
+    <!-- NavBar -->
     <!-- The following code was produced by chatGPT but modified by me -->
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="navbar navbar-expand-lg" id="navbarNav">
@@ -46,37 +48,21 @@
         </div>
     </nav>
 
-    <h1>Login Page</h1>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    {% for msg in messages %}
-    <p>{{msg}}</p>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
-    <div class="login-container">
-        <form action="#" method="POST">
-            <label for="username">@:</label>
-            <input type="text" id="username" name="username" required><br>
-
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="password" required><br>
-
-            <button type="submit">Login</button>
-        </form>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
     </div>
     <!-- chatgpt code ends -->
+    <!-- Your Content ABOVE this Line -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>

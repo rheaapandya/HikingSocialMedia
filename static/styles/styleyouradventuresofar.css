@@ -1,72 +1,73 @@
+/* the following code was produced by chatGPT but modified by me  */
 body {
-    background-color: #F8F2E6;
-    font-family: 'Sofia Sans', sans-serif;
-  }
-  
-  a{
-    color: black;
-    font-size: 15px;
-    padding-left: 20px;
-  }
+  background-color: #F8F2E6;
+  font-family: 'Sofia Sans', sans-serif;
+}
 
-  .custom-navbar {
-    background-color: #6F7949;
-    padding: 10px 20px;
-  }
-  
-  .custom-navbar a {
-    color: #F8F2E6;
-    font-family: 'Sofia Sans', sans-serif;
-    font-size: 15pt;
-    padding: 0 10px;
-  }
-  
-  .custom-search {
-    background-color: #989F7F;
-    color: #F8F2E6;
-  }
+a {
+  color: black;
+  font-size: 15px;
+  padding-left: 20px;
+}
 
-  .card {
-    background-color: #C4CFC7;
-    text-align: center;
-  }
-  
-  .card-img-top {
-    height: 90%;
-    width: 70%;
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-  }
+.custom-navbar {
+  background-color: #6F7949;
+  padding: 10px 20px;
+}
 
-  h2 {
-    font-size: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
+.custom-navbar a {
+  color: #F8F2E6;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 15pt;
+  padding: 0 10px;
+}
 
-  h1 {
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
 
- 
 
- 
+.card {
+  background-color: #C4CFC7;
+  text-align: center;
+}
+
+.card-img-top {
+  height: 90%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+
+
 
 .card-deck {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
- 
-  
-  .search-box input[type="text"],
-  .search-box button[type="submit"] {
-    background-color: #989F7F;
-  }
-  
-  
+
+
+
+
+.dropdown-menu {
+  background-color: #989F7F;
+}
+
+.btn {
+  background-color: #C4CFC7;
+}

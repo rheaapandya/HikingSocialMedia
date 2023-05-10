@@ -1,0 +1,51 @@
+/* the following code was produced by chatGPT but modified by me  */
+body {
+    background-color: #F8F2E6;
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+}
+
+.custom-navbar {
+    background-color: #6F7949;
+    padding: 10px 20px;
+}
+
+.custom-navbar a {
+    color: #F8F2E6;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 15pt;
+    padding: 0 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    background-color: #989F7F;
+}
+
+.card-img-top {
+    width: 90%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.card {
+    background-color: #C4CFC7;
+    text-align: center;
+    color: black
+}
+
+.btn {
+    background-color: #6F7949;
+}
+
+h1 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 15px;
+}

@@ -46,7 +46,7 @@
         </div>
     </nav>
 
-    <h1>Login Page</h1>
+    <h1>Signup Page</h1>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     {% for msg in messages %}
@@ -62,10 +62,15 @@
             <label for="password">Password:</label>
             <input type="text" id="password" name="password" required><br>
 
+            <label for="password">Retype Password:</label>
+            <input type="text" id="repassword" name="repassword" required><br>
+
             <button type="submit">Login</button>
         </form>
     </div>
+
     <!-- chatgpt code ends -->
+
 </body>
 
 </html>
